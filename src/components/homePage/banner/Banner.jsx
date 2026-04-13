@@ -36,6 +36,8 @@ const Banner = () => {
                     <p className='text-[#64748b] text-[18px]'>Interactions This Month</p>
                 </div>
             </div>
+
+            <div className="divider"></div>
         </div>
     );
 };
