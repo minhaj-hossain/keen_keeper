@@ -12,7 +12,7 @@ const Footer = () => {
 
                 <div className='text-center space-y-6'>
                     <div className='space-y-4'>
-                        <h1 className='font-bold text-7xl'><span className='font-black'>Keen</span>keeper</h1>
+                        <h1 className='font-bold text-7xl'><span className='font-black tracking-tighter'>Keen</span>keeper</h1>
 
                         <p className='opacity-80 '>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     </div>
