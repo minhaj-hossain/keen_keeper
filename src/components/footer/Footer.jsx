@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -19,9 +20,16 @@ const Footer = () => {
                     <div className='space-y-4'>
                         <h3 className='font-medium text-[20px]'>Social Links</h3>
 
-                        {/* Social link icons will be added soon */}
-                        <div>
-
+                        <div className='flex gap-2  justify-center'>
+                            <div className='p-2 rounded-full bg-white'>
+                                <FaInstagram size={20} color='black' />
+                            </div>
+                            <div className='p-2 rounded-full bg-white'>
+                                <FaFacebook size={20} color='black' />
+                            </div>
+                            <div className='p-2 rounded-full bg-white'>
+                                <FaLinkedin size={20} color='black' />
+                            </div>
                         </div>
                     </div>
                 </div>
