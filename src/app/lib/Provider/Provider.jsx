@@ -1,8 +1,9 @@
+import FriendProvider from "@/context/FriendContext";
 
 const Provider = ({children}) => {
-    return <friendProvider>
+    return <FriendProvider>
         {children}
-    </friendProvider>
+    </FriendProvider>
 };
 
 export default Provider;

@@ -1,13 +1,17 @@
 "use client"
 
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
 export const friendContext = createContext();
 
-const friendProvider = ({ children }) => {
+const FriendProvider = ({ children }) => {
+
+    const [friendData, setFriendData] = useState()
+
+
 
     const data = {
-        name: "Minhaj"
+        friendData, setFriendData
     }
 
     return <friendContext.Provider value={data}>
@@ -15,4 +19,4 @@ const friendProvider = ({ children }) => {
     </friendContext.Provider>
 };
 
-export default friendProvider;
+export default FriendProvider;

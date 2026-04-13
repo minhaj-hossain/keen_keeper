@@ -1,7 +1,28 @@
 import React from 'react';
 import { FaPlus } from 'react-icons/fa';
 
-const Banner = () => {
+const Banner = async () => {
+
+    const res = await fetch('http://localhost:3000/friendData.json')
+    const data = await res.json();
+
+    let onTrack = 0;
+    let interactionThisMonth = 0
+    
+    data.forEach(single => {
+        if (single.status == 'on-track') {
+            onTrack++;
+        } 
+    })
+
+    data.forEach(single => {
+        if (single.days_since_contact < 30) {
+            console.log(single.days_since_contact)
+            interactionThisMonth++;
+        }
+    })
+
+
     return (
         <div className='container mx-auto my-10 space-y-10'>
 
@@ -18,12 +39,12 @@ const Banner = () => {
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 
                 <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
-                    <h4 className='font-semibold text-3xl text-[#244d3f]'>4</h4>
+                    <h4 className='font-semibold text-3xl text-[#244d3f]'>{data.length}</h4>
                     <p className='text-[#64748b] text-[18px]'>Total Friends</p>
                 </div>
 
                 <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
-                    <h4 className='font-semibold text-3xl text-[#244d3f]'>3</h4>
+                    <h4 className='font-semibold text-3xl text-[#244d3f]'>{onTrack}</h4>
                     <p className='text-[#64748b] text-[18px]'>On Track</p>
                 </div>
 
@@ -32,7 +53,7 @@ const Banner = () => {
                     <p className='text-[#64748b] text-[18px]'>Need Attention</p>
                 </div>
                 <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
-                    <h4 className='font-semibold text-3xl text-[#244d3f]'>12</h4>
+                    <h4 className='font-semibold text-3xl text-[#244d3f]'>{interactionThisMonth}</h4>
                     <p className='text-[#64748b] text-[18px]'>Interactions This Month</p>
                 </div>
             </div>

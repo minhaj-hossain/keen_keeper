@@ -11,7 +11,12 @@ const Card = ({ friend }) => {
             <div className='p-6 flex flex-col justify-center items-center space-y-3 bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] rounded-lg'>
                 {/* image */}
                 <div>
-                    <Image src='https://i.ibb.co.com/PBkQBDG/email.webp' alt='image' width={80} height={80} />
+                    <Image
+                        src={picture}
+                        alt='image'
+                        width={80}
+                        height={80}
+                        className='rounded-full' />
                 </div>
 
                 {/* text content */}

@@ -8,6 +8,9 @@ const YourFriend = async () => {
     const res = await fetch('http://localhost:3000/friendData.json')
     const data = await res.json();
 
+
+    
+
     return (
         <div className='container px-4 sm:px-0 mx-auto my-10 space-y-4'>
             <h3 className='font-semibold text-2xl'>Your Friend</h3>
