@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Badge from './Badge';
+import Link from 'next/link';
 
 const Card = ({ friend }) => {
 
@@ -8,7 +9,7 @@ const Card = ({ friend }) => {
 
     return (
         <div>
-            <div className='p-6 flex flex-col justify-center items-center space-y-3 bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] rounded-lg'>
+            <Link href={`/friendDetails/${id}`} className='p-6 flex flex-col justify-center items-center space-y-3 bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] rounded-lg'>
                 {/* image */}
                 <div>
                     <Image
@@ -42,7 +43,7 @@ const Card = ({ friend }) => {
                     </div>
 
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
