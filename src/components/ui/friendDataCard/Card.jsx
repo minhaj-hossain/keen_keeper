@@ -31,7 +31,11 @@ const Card = ({ friend }) => {
                                 tags.map((tag, index) => <Badge key={index} tag={tag} />)
                             }
                         </div>
-                        <div className='bg-[#efad44] p-2 rounded-full capitalize font-medium text-[12px] text-center'>
+                        <div className={` 
+                            ${status == 'almost due' && 'bg-[#efad44]'} 
+                            ${status == 'overdue' && 'bg-[#ef4444]'} 
+                            ${status == 'on-track' && 'bg-[#244d3f]'} 
+                            p-2 rounded-full capitalize font-medium text-[12px] text-center text-white`}>
                             {status}
                         </div>
 
