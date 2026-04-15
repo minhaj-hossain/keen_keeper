@@ -17,7 +17,6 @@ const Banner = async () => {
 
     data.forEach(single => {
         if (single.days_since_contact < 30) {
-            console.log(single.days_since_contact)
             interactionThisMonth++;
         }
     })
