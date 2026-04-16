@@ -7,7 +7,7 @@ import TimeLineCard from './TimeLineCard';
 
 const CheckInCard = () => {
 
-    const { timeline, filter} = useContext(friendContext)
+    const { timeline, filter } = useContext(friendContext)
 
     const newData = (
         filter == '' ? timeline : (
@@ -19,7 +19,7 @@ const CheckInCard = () => {
 
         <>
 
-            <div className="space-y-4">
+            <div className="space-y-4 ">
                 {
                     newData.map(data => <TimeLineCard key={data.id} data={data} />)
                 }

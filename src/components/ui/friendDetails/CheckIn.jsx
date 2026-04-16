@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 
 const CheckIn = ({ expectedData }) => {
 
-    const { timeline, setTimeline } = useContext(friendContext)
+    const { setTimeline } = useContext(friendContext)
 
     const handleTimeline = (medium) => {
         const newData = {
@@ -27,7 +27,6 @@ const CheckIn = ({ expectedData }) => {
     };
 
 
-    // console.log(timeline)
     return (
         <>
             <div

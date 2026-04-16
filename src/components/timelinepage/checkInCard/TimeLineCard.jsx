@@ -7,7 +7,6 @@ const TimeLineCard = ({ data }) => {
 
     const { id, name, medium, date } = data;
 
-    console.log(data)
 
     return (
 

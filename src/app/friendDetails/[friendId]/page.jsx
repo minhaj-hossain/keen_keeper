@@ -86,7 +86,7 @@ const FriendDetailsPage = async ({ params }) => {
                                 Quick Check-In
                             </h3>
 
-                            <div className='grid grid-cols-3 gap-4 md:grid-cols-4'>
+                            <div className='grid grid-cols-3 gap-4 '>
                                 <CheckIn expectedData={expectedData} />
 
                             </div>
