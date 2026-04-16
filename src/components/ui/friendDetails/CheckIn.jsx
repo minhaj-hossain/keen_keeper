@@ -21,7 +21,9 @@ const CheckIn = ({ expectedData }) => {
 
         setTimeline((prev) => [...prev, newData]);
 
-        toast.success(`${medium} with ${expectedData.name} added in the timeline`);
+        toast.success(`${medium} with ${expectedData.name} added in the timeline`, {
+            position: "top-center"
+        });
     };
 
 

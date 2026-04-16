@@ -8,7 +8,6 @@ const Filter = () => {
     const { timeline, setTimeline, filter, setFilter } = useContext(friendContext)
 
     const handleFilter = (value) => {
-
         setFilter(value)
         
     }

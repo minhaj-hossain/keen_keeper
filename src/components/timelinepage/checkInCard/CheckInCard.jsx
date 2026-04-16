@@ -20,8 +20,6 @@ const CheckInCard = () => {
         <>
 
             <div className="space-y-4">
-                {/* Item 1 */}
-
                 {
                     newData.map(data => <TimeLineCard key={data.id} data={data} />)
                 }
