@@ -32,21 +32,21 @@ const CheckIn = ({ expectedData }) => {
         <>
             <div
                 onClick={() => handleTimeline('call')}
-                className='bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-4 flex flex-col items-center cursor-pointer'>
+                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20'>
                 <FiPhoneCall className='text-2xl mb-2' />
                 <h4 className='text-[18px] text-[#1f2937]'>Call</h4>
             </div>
 
             <div
                 onClick={() => handleTimeline('text')}
-                className='bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-4 flex flex-col items-center cursor-pointer'>
+                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20'>
                 <MdOutlineTextsms className='text-2xl mb-2' />
                 <h4 className='text-[18px] text-[#1f2937]'>Text</h4>
             </div>
 
             <div
                 onClick={() => handleTimeline('video')}
-                className='bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-4 flex flex-col items-center cursor-pointer'>
+                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20'>
                 <IoVideocamOutline className='text-2xl mb-2' />
                 <h4 className='text-[18px] text-[#1f2937]'>Video</h4>
             </div>

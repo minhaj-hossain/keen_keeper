@@ -17,7 +17,7 @@ const Filter = () => {
 
             <select
                 onChange={(e) => handleFilter(e.target.value)}
-                className="border border-gray-300 rounded-md px-4 py-2 text-gray-600 w-[30%]"
+                className="border border-gray-300 rounded-md px-4 py-2 text-gray-600 w-full md:w-1/3"
             >
                 <option value="">Filter timeline</option>
                 <option value="text">Text</option>

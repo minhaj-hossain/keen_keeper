@@ -35,8 +35,8 @@ const FriendInfoCard = ({ expectedData }) => {
                         </div>
                     </div>
 
-                    <div className='space-y-2 flex flex-col justify-center items-center'>
-                        <div className='flex flex-wrap gap-2'>
+                    <div className='w-full flex flex-col justify-center items-center space-y-2'>
+                        <div className='flex flex-wrap justify-center gap-2 w-full'>
 
                             {
                                 tags.map((tag, index) => <Badge key={index} tag={tag} />)

@@ -11,14 +11,14 @@ const TimeLineCard = ({ data }) => {
 
     return (
 
-        <div className="flex items-center gap-4 bg-white border border-gray-200 rounded-lg px-5 py-4 shadow-sm">
+        <div className="flex flex-row items-start sm:items-center gap-3 sm:gap-4 bg-white border border-gray-200 rounded-lg px-4 py-4 sm:px-5 shadow-sm">
             <div className="text-2xl">
                 {medium == 'text' ? (<MdOutlineTextsms className='text-3xl' />) : ''}
                 {medium == 'call' ? (<FiPhoneCall className='text-3xl' />) : ''}
                 {medium == 'video' ? (<IoVideocamOutline className='text-3xl' />) : ''}
 
             </div>
-            <div>
+            <div className='min-w-0 flex-1'>
                 <p className="text-gray-800 font-medium">
                     <span className='capitalize'>{medium}</span> <span className="text-gray-500 font-normal">with {name}</span>
                 </p>

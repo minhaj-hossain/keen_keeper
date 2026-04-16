@@ -18,36 +18,36 @@ const FriendDetailsPage = async ({ params }) => {
     const expectedData = data.find(particular => particular.id == friendId)
 
     return (
-        <div className='max-w-400 px-4 md:px-10 2xl:px-0 mx-auto my-20'>
+        <div className='max-w-7xl px-4 md:px-10 2xl:px-0 mx-auto my-8 md:my-20'>
             <div>
                 {/* top details  */}
-                <div className='grid grid-cols-10 gap-4 '>
+                <div className='grid grid-cols-1 md:grid-cols-10 gap-4 '>
 
-                    <div className='col-span-4 row-span-2 min-w-65'>
+                    <div className='md:col-span-4 row-span-2 '>
                         <FriendInfoCard expectedData={expectedData} />
                     </div>
 
-                    <div className='col-span-2'><div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                    <div className=' md:col-span-2'><div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
                         <h4 className='font-semibold text-3xl text-[#244d3f]'>3</h4>
                         <p className='line-clamp-1 text-[#64748b] text-[18px]'>Days Since Contact</p>
                     </div></div>
-                    <div className='col-span-2'>
+                    <div className=' md:col-span-2'>
                         <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
                             <h4 className='font-semibold text-3xl text-[#244d3f]'>5</h4>
                             <p className='text-[#64748b] text-[18px] line-clamp-1'>Goal (Days)</p>
                         </div>
                     </div>
-                    <div className='col-span-2'>
+                    <div className=' md:col-span-2'>
                         <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
                             <h4 className='font-semibold text-3xl text-[#244d3f]'>5</h4>
                             <p className='text-[#64748b] text-[18px]'>Next Due</p>
                         </div>
                     </div>
 
-                    <div className='col-span-6 flex items-center'>
+                    <div className='md:col-span-6'>
                         <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 flex-1'>
 
-                            <div className='flex justify-between'>
+                            <div className='flex  justify-between items-start sm:items-center gap-3'>
                                 <h3 className='font-medium text-xl text-[#244d3f]'>Relationship Goal</h3>
                                 <button className='bg-[#f8fafc] btn btn-ghost  border border-[#e9e9e9]'>Edit</button>
                             </div>
@@ -58,21 +58,27 @@ const FriendDetailsPage = async ({ params }) => {
 
                 </div>
 
-                <div className='grid grid-cols-10 gap-4 mt-4'>
+                <div className='grid grid-cols-1 md:grid-cols-10 gap-4 mt-6'>
 
-                    <div className='col-span-4  flex flex-col gap-3 min-w-65'>
-                        <div
-                            className='ext-center bg-white p-3 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 flex gap-3 justify-center'> <div className='flex items-center gap-3 font-medium'><RiNotificationSnoozeLine /><p>Snooze 2 weeks</p></div></div>
+                    <div className='md:col-span-4 flex flex-col gap-3'>
+                        <div className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] flex  justify-center  items-center gap-3 font-medium text-[#1f2937]'>
+                            <RiNotificationSnoozeLine className="text-xl  shrink-0" />
+                            <p>Snooze 2 weeks</p>
+                        </div>
 
-                        <div
-                            className='ext-center bg-white p-3 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 flex gap-3 justify-center'> <div className='flex items-center gap-3 font-medium'><LuArchive /><p>Archive</p></div></div>
+                        <div className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)]  flex justify-center items-center gap-3 font-medium text-[#1f2937]'>
+                            <LuArchive className="text-xl  shrink-0" />
+                            <p>Archive</p>
+                        </div>
 
-                        <div
-                            className='ext-center bg-white p-3 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 flex gap-3 justify-center'> <div className='flex items-center gap-3 text-[#ef4444] font-medium'><RiDeleteBin6Line /><p>Delete</p></div></div>
-
+                        <div className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)]  flex justify-center items-center gap-3 font-medium text-[#ef4444]'>
+                            <RiDeleteBin6Line className="text-xl flex shrink-0" />
+                            <p>Delete</p>
+                        </div>
                     </div>
 
-                    <div className='col-span-6  '>
+
+                    <div className='md:col-span-6  '>
 
                         <div className=' bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-4 flex-1'>
 
@@ -80,7 +86,7 @@ const FriendDetailsPage = async ({ params }) => {
                                 Quick Check-In
                             </h3>
 
-                            <div className='grid grid-cols-3 gap-4'>
+                            <div className='grid grid-cols-3 gap-4 md:grid-cols-4'>
                                 <CheckIn expectedData={expectedData} />
 
                             </div>
@@ -90,12 +96,12 @@ const FriendDetailsPage = async ({ params }) => {
                     </div>
 
                     {/* empty */}
-                    <div className='col-span-4'></div>
+                    {/* <div className='col-span-4'></div> */}
 
-                    <div className='col-span-6'>
+                    <div className='md:col-span-6 md:col-start-5'>
                         <div className=' bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-4 flex-1'>
 
-                            <div className='flex justify-between'>
+                            <div className='flex justify-between flex-col sm:flex-row  gap-3'>
                                 <h3 className='font-medium text-xl text-[#244d3f]'>Recent Interactions</h3>
                                 <button className='bg-[#f8fafc] btn btn-ghost  border border-[#e9e9e9]'><FaHistory />Full History</button>
                             </div>
@@ -157,7 +163,7 @@ const FriendDetailsPage = async ({ params }) => {
 
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
