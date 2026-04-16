@@ -1,4 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KeenKeeper — Keep Your Friendships Alive
+
+KeenKeeper is a simple and beautiful dashboard to help you stay connected with your friends. It tracks when you last talked to someone, reminds you when it's time to reach out, and shows how healthy your friendships are.
+
+No more forgetting birthdays or realizing it's been months since you checked in on someone. KeenKeeper keeps your social circle alive.
+
+## Live Demo
+
+**Live Link:** []  
+
+## Technologies Used
+
+- **Next.js / React.js** – Frontend framework & routing
+- **Tailwind CSS** – Styling and responsive design
+- **Recharts** – Beautiful charts for friendship analytics
+- **Lucide React** – Clean icons
+- **React Hot Toast** – Smooth notifications
+- **JSON** – Simple data handling
+
+## Key Features
+
+### 1. Friend Dashboard
+See all your friends at a glance. Each card shows their status:
+- **Overdue** 
+- **Almost Due** 
+- **On Track** 
+
+Color-coded based on how long it's been since your last interaction.
+
+### 2. Friend Detail Page
+Click any friend to open their profile where you can:
+- Set and see your relationship goals
+- Quickly log calls, texts, or video chats with one click
+- View the full interaction timeline
+
+### 3. Analytics & History
+- Nice pie chart showing your overall communication habits
+- Filterable timeline of all your interactions 
+
+## Project Details
+
+- Fully responsive (mobile, tablet & desktop)
+- Dynamic routing for individual friend pages
+- Clean UI with loading states and toast notifications
+- Custom 404 page included
+
 
 ## Getting Started
 
@@ -16,21 +61,3 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
