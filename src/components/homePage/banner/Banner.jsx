@@ -3,7 +3,9 @@ import { FaPlus } from 'react-icons/fa';
 
 const Banner = async () => {
 
-    const res = await fetch('http://localhost:3000/friendData.json')
+    const res = await fetch('http://localhost:3000/friendData.json', {
+        cache: "no-store"
+    })
     const data = await res.json();
 
     let onTrack = 0;

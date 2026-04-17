@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Card = ({ friend }) => {
 
-    const { next_due_date, goal, bio, tags, status, days_since_contact, email, picture, name, id } = friend;
+    const { tags, status, days_since_contact, picture, name, id } = friend;
 
     return (
         <div>
