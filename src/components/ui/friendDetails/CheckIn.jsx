@@ -1,7 +1,7 @@
 "use client"
 
 import { friendContext } from '@/context/FriendContext';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { MdOutlineTextsms } from 'react-icons/md';
@@ -31,21 +31,21 @@ const CheckIn = ({ expectedData }) => {
         <>
             <div
                 onClick={() => handleTimeline('call')}
-                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20'>
+                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20 group relative  transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                 <FiPhoneCall className='text-2xl mb-2' />
                 <h4 className='text-[18px] text-[#1f2937]'>Call</h4>
             </div>
 
             <div
                 onClick={() => handleTimeline('text')}
-                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20'>
+                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20 group relative  transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                 <MdOutlineTextsms className='text-2xl mb-2' />
                 <h4 className='text-[18px] text-[#1f2937]'>Text</h4>
             </div>
 
             <div
                 onClick={() => handleTimeline('video')}
-                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20'>
+                className='flex-1 bg-[#f8fafc] border border-[#e9e9e9] rounded-lg p-3 md:p-4 flex flex-col items-center cursor-pointer min-w-20 group relative transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                 <IoVideocamOutline className='text-2xl mb-2' />
                 <h4 className='text-[18px] text-[#1f2937]'>Video</h4>
             </div>

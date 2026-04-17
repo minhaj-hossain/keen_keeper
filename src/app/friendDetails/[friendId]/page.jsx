@@ -27,25 +27,26 @@ const FriendDetailsPage = async ({ params }) => {
                         <FriendInfoCard expectedData={expectedData} />
                     </div>
 
-                    <div className=' md:col-span-2'><div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                    <div className=' md:col-span-2'><div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                         <h4 className='font-semibold text-3xl text-[#244d3f]'>3</h4>
                         <p className='line-clamp-1 text-[#64748b] text-[18px]'>Days Since Contact</p>
                     </div></div>
                     <div className=' md:col-span-2'>
-                        <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                        <div
+                            className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative    transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                             <h4 className='font-semibold text-3xl text-[#244d3f]'>5</h4>
                             <p className='text-[#64748b] text-[18px] line-clamp-1'>Goal (Days)</p>
                         </div>
                     </div>
                     <div className=' md:col-span-2'>
-                        <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                        <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative   transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                             <h4 className='font-semibold text-3xl text-[#244d3f]'>5</h4>
                             <p className='text-[#64748b] text-[18px]'>Next Due</p>
                         </div>
                     </div>
 
                     <div className='md:col-span-6'>
-                        <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 flex-1'>
+                        <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 flex-1 group relative transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
 
                             <div className='flex  justify-between items-start sm:items-center gap-3'>
                                 <h3 className='font-medium text-xl text-[#244d3f]'>Relationship Goal</h3>
@@ -61,17 +62,21 @@ const FriendDetailsPage = async ({ params }) => {
                 <div className='grid grid-cols-1 md:grid-cols-10 gap-4 mt-6'>
 
                     <div className='md:col-span-4 flex flex-col gap-3'>
-                        <div className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] flex  justify-center  items-center gap-3 font-medium text-[#1f2937]'>
+                        <div
+                            className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] flex  justify-center  items-center gap-3 font-medium text-[#1f2937] group relative border border-gray-200  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                             <RiNotificationSnoozeLine className="text-xl  shrink-0" />
                             <p>Snooze 2 weeks</p>
                         </div>
 
-                        <div className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)]  flex justify-center items-center gap-3 font-medium text-[#1f2937]'>
+                        <div
+                            className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)]  flex justify-center items-center gap-3 font-medium text-[#1f2937] 
+                            group relative  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                             <LuArchive className="text-xl  shrink-0" />
                             <p>Archive</p>
                         </div>
 
-                        <div className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)]  flex justify-center items-center gap-3 font-medium text-[#ef4444]'>
+                        <div
+                            className='bg-white px-5 py-3.5 rounded-xl shadow-[0_1px_6px_0_rgba(0,0,0,0.08)]  flex justify-center items-center gap-3 font-medium text-[#ef4444] group relative  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                             <RiDeleteBin6Line className="text-xl flex shrink-0" />
                             <p>Delete</p>
                         </div>
@@ -108,7 +113,7 @@ const FriendDetailsPage = async ({ params }) => {
 
                             <div className=''>
 
-                                <div className='border-b border-[#e9e9e9] flex justify-between items-center py-3'>
+                                <div className='border-b border-[#e9e9e9] flex justify-between items-center py-3 group relative  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
 
                                     <div className='flex items-center gap-4'>
                                         {/* image */}
@@ -123,7 +128,7 @@ const FriendDetailsPage = async ({ params }) => {
                                     <p className='text-[14px] text-[#64748b]'>Jan 28, 2026</p>
 
                                 </div>
-                                <div className='border-b border-[#e9e9e9] flex justify-between items-center py-3'>
+                                <div className='border-b border-[#e9e9e9] flex justify-between items-center py-3 group relative  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
 
                                     <div className='flex items-center gap-4'>
                                         {/* image */}
@@ -138,7 +143,7 @@ const FriendDetailsPage = async ({ params }) => {
                                     <p className='text-[14px] text-[#64748b]'>Jan 28, 2026</p>
 
                                 </div>
-                                <div className='border-b border-[#e9e9e9] flex justify-between items-center py-3'>
+                                <div className='border-b border-[#e9e9e9] flex justify-between items-center py-3 group relative  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
 
 
                                     <div className='flex items-center gap-4'>

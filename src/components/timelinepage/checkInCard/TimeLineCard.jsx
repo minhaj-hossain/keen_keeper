@@ -5,12 +5,12 @@ import { MdOutlineTextsms } from 'react-icons/md';
 
 const TimeLineCard = ({ data }) => {
 
-    const { id, name, medium, date } = data;
+    const { name, medium, date } = data;
 
 
     return (
 
-        <div className="flex flex-row items-start sm:items-center gap-3 sm:gap-4 bg-white border border-gray-200 rounded-lg px-4 py-4 sm:px-5 shadow-sm">
+        <div className="flex flex-row items-start sm:items-center gap-3 sm:gap-4 bg-white border border-gray-200 rounded-lg px-4 py-4 sm:px-5 shadow-sm group relative  p-6  transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200 ">
             <div className="text-2xl">
                 {medium == 'text' ? (<MdOutlineTextsms className='text-3xl' />) : ''}
                 {medium == 'call' ? (<FiPhoneCall className='text-3xl' />) : ''}

@@ -4,12 +4,13 @@ import Badge from '../friendDataCard/Badge';
 
 const FriendInfoCard = ({ expectedData }) => {
 
-    const { next_due_date, goal, bio, tags, status, days_since_contact, email, picture, name, id } = expectedData;
+    const { bio, tags, status, email, picture, name, id } = expectedData;
 
 
     return (
         <div>
-            <div href={`/friendDetails/${id}`} className='p-6 flex flex-col justify-center items-center space-y-3 bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] rounded-lg'>
+            <div href={`/friendDetails/${id}`}
+                className='p-6 flex flex-col justify-center items-center space-y-3 bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] rounded-lg group relative transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                 {/* image */}
                 <div>
                     <Image

@@ -8,11 +8,11 @@ const Banner = async () => {
 
     let onTrack = 0;
     let interactionThisMonth = 0
-    
+
     data.forEach(single => {
         if (single.status == 'on-track') {
             onTrack++;
-        } 
+        }
     })
 
     data.forEach(single => {
@@ -37,21 +37,22 @@ const Banner = async () => {
 
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 
-                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                <div
+                    className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative   transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                     <h4 className='font-semibold text-3xl text-[#244d3f]'>{data.length}</h4>
                     <p className='text-[#64748b] text-[18px]'>Total Friends</p>
                 </div>
 
-                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative   transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                     <h4 className='font-semibold text-3xl text-[#244d3f]'>{onTrack}</h4>
                     <p className='text-[#64748b] text-[18px]'>On Track</p>
                 </div>
 
-                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative   transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                     <h4 className='font-semibold text-3xl text-[#244d3f]'>6</h4>
                     <p className='text-[#64748b] text-[18px]'>Need Attention</p>
                 </div>
-                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2'>
+                <div className='text-center bg-white p-8 rounded-lg shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] space-y-2 group relative   transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 hover:ring-1 hover:ring-gray-200'>
                     <h4 className='font-semibold text-3xl text-[#244d3f]'>{interactionThisMonth}</h4>
                     <p className='text-[#64748b] text-[18px]'>Interactions This Month</p>
                 </div>
