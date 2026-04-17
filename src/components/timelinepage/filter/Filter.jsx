@@ -1,15 +1,15 @@
 'use client'
 
 import { friendContext } from '@/context/FriendContext';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 
 const Filter = () => {
 
-    const { timeline, setTimeline, filter, setFilter } = useContext(friendContext)
+    const { setFilter } = useContext(friendContext)
 
     const handleFilter = (value) => {
         setFilter(value)
-        
+
     }
 
     return (
