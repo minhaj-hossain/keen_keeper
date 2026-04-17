@@ -12,7 +12,7 @@ const FriendDetailsPage = async ({ params }) => {
 
     const { friendId } = await params;
 
-    const res = await fetch('http://localhost:3000/friendData.json', {
+    const res = await fetch('https://keen-keeper-three.vercel.app/friendData.json', {
         cache: "no-store"
     })
     const data = await res.json();

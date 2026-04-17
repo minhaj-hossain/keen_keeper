@@ -1,11 +1,10 @@
 import Card from '@/components/ui/friendDataCard/Card';
-import Image from 'next/image';
 import React from 'react';
 
 
 const YourFriend = async () => {
 
-    const res = await fetch('http://localhost:3000/friendData.json', {
+    const res = await fetch('https://keen-keeper-three.vercel.app/friendData.json', {
         cache: "no-store"
     })
     const data = await res.json();
