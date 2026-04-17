@@ -6,7 +6,7 @@ No more forgetting birthdays or realizing it's been months since you checked in 
 
 ## Live Demo
 
-**Live Link:** [keen-keeper-three.vercel.app]  
+**Live Link:** [https://keen-keeper-three.vercel.app]  
 
 ## Technologies Used
 
